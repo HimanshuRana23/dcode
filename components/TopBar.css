@@ -1,0 +1,80 @@
+.topbar {
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+.topbar-left {
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-left .app-title {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+    text-align: left;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-name {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    background-color: #3498db;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-avatar:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .topbar {
+        padding: 0 1rem;
+    }
+
+    .topbar-left {
+        margin-left: 0;
+    }
+
+    .app-title {
+        font-size: 1.2rem;
+    }
+
+    .user-name {
+        display: none;
+    }
+} 
