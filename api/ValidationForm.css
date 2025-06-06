@@ -1,0 +1,147 @@
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.input-group-text {
+    background-color: #f8f9fa;
+    border-right: none;
+}
+
+.input-group .form-control {
+    border-left: none;
+}
+
+.input-group .form-control:focus {
+    border-left: none;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+.invalid-feedback {
+    font-size: 0.875rem;
+    color: #e74c3c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1rem;
+    }
+    
+    .form-row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.form-select-sm {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Styles for searchable dropdown */
+.form-select[data-search="true"] {
+    position: relative;
+}
+
+.form-select[data-search="true"]::before {
+    content: "🔍";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 0.875rem;
+}
+
+.form-select[data-search="true"]:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Custom styles for the dropdown options */
+.form-select option {
+    font-size: 0.875rem;
+    padding: 8px;
+}
+
+/* Style for the search input that appears when dropdown is opened */
+.form-select[data-search="true"]:focus::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #007bff;
+}
+
+/* React Select Custom Styles */
+.form-group .select__control {
+    min-height: 32px;
+    border-color: #ced4da;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.form-group .select__control:hover {
+    border-color: #adb5bd;
+}
+
+.form-group .select__control--is-focused {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-group .select__menu {
+    font-size: 0.875rem;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group .select__option {
+    padding: 8px 12px;
+}
+
+.form-group .select__option--is-focused {
+    background-color: #e9ecef;
+}
+
+.form-group .select__option--is-selected {
+    background-color: #3498db;
+}
+
+.form-group .select__input {
+    font-size: 0.875rem;
+}
+
+.form-group .select__placeholder {
+    color: #6c757d;
+    font-size: 0.875rem;
+} 
